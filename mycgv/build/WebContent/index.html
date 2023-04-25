@@ -1,13 +1,59 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>MYCGV</title>
 	<link href="http://localhost:9000/mycgv/css/mycgv.css" rel="stylesheet">
+	<style>
+		.if1 {
+			display:block;
+		}
+		.section2 div:first-child, .section3 > div:first-child {
+			padding:15px 0px;
+		}
+		.section2 div:nth-child(2) {
+			float:left;
+		}
+		.section2 > img {
+			width:283px;
+			height:400px;
+			float:right;
+		}
+		.section3 {
+			clear:both;
+		}
+		
+		.section3 > div:last-child > img:first-child ,
+		.section3 > div:nth-child(2) > img:first-child {
+			float:left;
+		}
+		
+		.section3 > div:nth-child(2) > img:last-child ,
+		.section3 > div:nth-child(3) > img:last-child {
+			float:right;
+		}
+		.section3 > div:nth-child(2) > img:nth-child(2) ,
+		.section3 > div:nth-child(2) > img:nth-child(3) {
+			margin:0px 3px;
+		}
+		.section3 > div:nth-child(2) {
+			padding-bottom:20px;
+		}
+		.section3 > div:nth-child(3) {
+			padding-top:20px;
+		}
+		.section3 > div:nth-child(3) > img:first-child , 
+		.section3 > div:nth-child(3) > img:last-child {
+			border:3px double black;
+			outline:2px solid black;
+			margin:4px;
+		}
+	</style>
 </head>
 <body>
 	<!-- header -->
-	<iframe src="http://localhost:9000/mycgv/header.html" scrolling="no" width="100%" height="149px" frameborder=0></iframe>
+	<iframe class="if1" src="http://localhost:9000/mycgv/header.html" scrolling="no" width="100%" height="149px" frameborder=0></iframe>
 	<!-- content -->
 	<div class="content">
 		<section class="section1">
@@ -20,7 +66,7 @@
 				<img src="http://localhost:9000/mycgv/images/h3_movie_selection.gif">
 			</div>
 			<div class="section2_d2">
-				<iframe width="730" height="388" src="https://www.youtube.com/embed/_RnF_9XHz9w" 
+				<iframe width="750" height="388" src="https://www.youtube.com/embed/_RnF_9XHz9w" 
 						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
 						clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 						allowfullscreen>
@@ -46,6 +92,6 @@
 		</section>
 	</div>
 	<!-- footer -->
-	<iframe src="http://localhost:9000/mycgv/footer.html" scrolling="no" width="100%" height="500px" frameborder=0></iframe>
+	<iframe src="http://localhost:9000/mycgv/footer.html" scrolling="no" width="100%" height="420px" frameborder=0></iframe>
 </body>
 </html>

@@ -4,11 +4,73 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	<link href="http://localhost:9000/mycgv/css/mycgv.css" rel="stylesheet">
+	<!-- <style>
+		.header_menu > .nav1 {
+			float:right;
+		}
+		.header_menu > .nav1 > ul {
+			margin-right:14px;
+		}
+		.header_menu > .nav1 > ul > li {
+			float:left;
+			list-style-type:none;
+			
+		}
+		.header_menu > .nav1 > ul > li > a {
+			margin-top: 6px;
+			text-decoration:none;
+			color:gray;
+			display:block;
+			width: 60px;
+			height:13px;
+			text-align:center;
+			font-family:"나눔고딕", sans-serif;
+			font-size:12px;
+			border-right:1px solid gray;
+		}
+		.header_menu > .nav1 > ul > li:last-child > a {
+			border:none;
+			color:tomato;
+		}
+		.header_menu > div {
+			clear:both;
+			position:relative;
+		}
+		.header_menu > div > a {
+			position:absolute;
+			top:30px;
+			left:14px;
+		}
+		.header_menu > div > div {
+			width:500px;
+			position:absolute;
+			top:30px;
+			left:250px;
+			text-align:center;
+		
+		}
+		.header_menu > div > div> .nav2 > ul{
+			list-style-type:none;
+		}
+		.header_menu > div > div> .nav2 > ul > li{
+			float:left;
+			width: 25%;
+		}
+		.header_menu > div > div> .nav2 > ul > li > a{
+			padding: 20px 0;
+			display:block;
+			text-decoration:none;
+			font-family:"나눔고딕", sans-serif;
+			font-weight:bold;
+			font-size:18px;
+			color : #000;
+		}
+	</style> -->
 </head>
 <body>
 	<header>
 	    <div class ="header_menu">
-			<nav>
+			<nav class ="nav1">
 				<ul>
 					<li><a href="http://localhost:9000/mycgv/login/login.html" target="_parent">로그인</a></li>
 					<li><a href="http://localhost:9000/mycgv/join/join.html" target="_parent">회원가입</a></li>
@@ -26,7 +88,7 @@
 				</a>
 				<div>
 					<img src="http://localhost:9000/mycgv/images/h2_cultureplex.png">
-					<nav>
+					<nav class ="nav2">
 						<ul>
 							<li><a href="#" target="_parent">영화</a></li>
 							<li><a href="#" target="_parent">예매</a></li>
